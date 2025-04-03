@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.main-section {
+  height: 100vh;
+  display: flex;
+}
+
+/*                                  Left Section                                             */
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-left {
+  display: flex;
+}
+
+.left-right-box {
+  position: relative;
+}
+
+.shape-1 {
+  position: absolute;
+  background-image: url(../images/destanation-point.png);
+  width: 36px;
+  height: 48px;
+  top: 231px;
+  left: 102px;
+}
+.shape-2 {
+  position: absolute;
+  background-image: url(../images/line.png);
+  width: 462.1863293510837;
+  height: 107.38634998770215;
+  height: 462px;
+  width: 220px;
+  border-width: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 280px;
+  left: 116px;
+}
+.shape-3 {
+  position: absolute;
+  background-image: url(../images/destanation-point.png);
+  width: 36px;
+  height: 48px;
+  bottom: 80px;
+  left: 310px;
+}
+
+.main-left {
+  background-image: url(../images/main-section-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 59vw;
+  position: relative;
+  padding: 63px 80px;
+}
+
+.title-travel {
+  position: relative;
+  font-weight: 700;
+  font-size: clamp(18px, 1.875vw, 36px);
+  color: var(--main-text-color-left);
+}
+
+.box-left-text {
+  position: relative;
+  top: 270px;
+  width: 510px;
+}
+
+.caption-get-ready {
+  font-weight: 700;
+  font-size: clamp(32px, 3.33vw, 64px);
+  line-height: 83px;
+  color: var(--main-text-color-left);
+  letter-spacing: 3px;
+}
+
+.paragraph-left {
+  font-weight: 500;
+  font-size: clamp(24px, 2.5vw, 48px);
+  color: var(--main-text-color-left);
+  letter-spacing: 3px;
+}
+
+.btn {
+  width: 15vw;
+  height: 8vh;
+  background-color: rgba(252, 87, 16, 1);
+  color: var(--main-text-color-left);
+  border-radius: 20px;
+  font-size: clamp(18px, 1.875vw, 36px);
+  font-weight: 700;
+  margin-top: 43px;
+  left: 4px;
+}
+
+/*                                  Right Section                                             */
+
+.main-right {
+  width: 41vw;
+  height: 100vh;
+  padding-left: 100px;
+  padding-right: 28px;
+}
+
+.right-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  justify-content: space-between;
+
+  top: 0px;
+}
+
+.lines-3 {
+  position: relative;
+  width: 50px;
+  height: 9.5px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  top: 20px;
+}
+
+.lines-3::before,
+.lines-3::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 9.5px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  left: -10px;
+}
+
+.lines-3::before {
+  top: -15px;
+}
+
+.lines-3::after {
+  top: 15px;
+}
+
+.ex {
+  position: relative;
+  width: 62px;
+  height: 47px;
+  cursor: pointer;
+}
+
+.ex:hover .lines-3 {
+  background-color: transparent;
+}
+
+.ex:hover .lines-3::before {
+  transform: rotate(45deg) translate(13px, 5px);
+}
+
+.ex:hover .lines-3::after {
+  transform: rotate(-45deg) translate(15px, -8px);
+}
+
+.lines-3::before {
+  top: -15px;
+}
+
+.lines-3::after {
+  top: 15px;
+}
+
+.header-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 49px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-options a {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.search-field {
+  position: relative;
+  color: rgba(186, 185, 185, 1);
+  width: 600px;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid rgba(235, 232, 232, 1);
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: url("../images/find.png") no-repeat left center;
+  background-size: 25px 25px;
+  outline: none;
+  margin-top: 122px;
+}
+
+.header-discover {
+  margin-top: 37px;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.categories {
+  margin-top: 36px;
+  gap: 133px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.option-list,
+.option-list1 {
+  position: relative;
+  line-height: 24px;
+}
+
+.option-list1 {
+  color: rgba(252, 87, 16, 1);
+}
+
+.option-list1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(252, 87, 16, 1);
+}
+
+.option-list:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  height: 5px;
+  width: 0%;
+  background-color: #212529;
+  transition: 0.3s;
+}
+
+.option-list:hover::after {
+  width: 100%;
+}
+
+.option-list:hover,
+.option-list1:hover {
+  cursor: pointer;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 70px;
+  margin-left: -20px;
+}
+
+.item-image {
+  width: 190px;
+  height: 285px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-image:hover {
+  cursor: pointer;
+}
+
+.photos h3 {
+  margin-top: 215px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.item-image1 {
+  background-image: url(../images/royal-galaxy.png);
+}
+.item-image2 {
+  background-image: url(../images/blue-moon-hotel.png);
+}
+.item-image3 {
+  background-image: url(../images/red-valvet-inn.jpg);
+}
+
+.distance {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+.distance::before {
+  content: "";
+  background-image: url(../images/destanation-point-orange.png);
+  width: 20px;
+  height: 27px;
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.bottom-right {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  gap: 25px;
+}
+
+.arrows img:hover {
+  cursor: pointer;
+}
+
+.bottom-link a {
+  color: rgba(177, 174, 174, 1);
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+}
